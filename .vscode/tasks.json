@@ -12,13 +12,23 @@
             "problemMatcher": "$msCompile"
         },
         {
-            "label": "build",
+            "label": "build-tests",
             "command": "dotnet",
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/src/AdminProj.csproj"
+                "${workspaceFolder}/test/test.csproj"
             ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "test",
+            "command": "dotnet test",
+            "type": "shell",
+            "group": "test",
+            "presentation": {
+                "reveal": "silent"
+            },
             "problemMatcher": "$msCompile"
         }
     ]

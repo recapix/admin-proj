@@ -324,5 +324,6 @@ ASALocalRun/
 *.nvusers
 
 # Remoção de arquivos de wwwroot
-wwwroot/lib
-wwwroot/css
+**/wwwroot/lib
+**/wwwroot/css
+**/wwwroot/js
