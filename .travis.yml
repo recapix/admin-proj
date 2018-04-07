@@ -1,7 +1,8 @@
 language: csharp
 dist: trusty
 sudo: required
-services: postgresql
+before_install:
+  - chmod +x build.sh
 mono: none
 dotnet: 2.0.3 # https://www.microsoft.com/net/download/linux
 branches:
