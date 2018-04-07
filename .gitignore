@@ -325,3 +325,4 @@ ASALocalRun/
 
 # Remoção de arquivos de wwwroot
 wwwroot/lib
+wwwroot/css
