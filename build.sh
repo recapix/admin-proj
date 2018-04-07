@@ -5,4 +5,4 @@ set -e
 
 dotnet restore
 
-dotnet test ./test/UnitTests.csproj
+dotnet test test/test.csproj
