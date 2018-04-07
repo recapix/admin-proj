@@ -1,0 +1,13 @@
+language: csharp
+dist: trusty
+sudo: required
+services: postgresql
+mono: none
+dotnet: 2.0.3 # https://www.microsoft.com/net/download/linux
+branches:
+  only:
+    - master
+    - develop
+script:
+  - ./build.sh
+
