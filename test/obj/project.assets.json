@@ -13607,35 +13607,41 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Renan\\.nuget\\packages\\": {},
+    "C:\\Users\\renan.leite\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Renan\\Desktop\\Projetos Renan\\AdminProj\\test\\test.csproj",
+      "projectUniqueName": "C:\\Users\\renan.leite\\Desktop\\Projetos Renan\\admin-proj\\test\\test.csproj",
       "projectName": "test",
-      "projectPath": "C:\\Users\\Renan\\Desktop\\Projetos Renan\\AdminProj\\test\\test.csproj",
-      "packagesPath": "C:\\Users\\Renan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Renan\\Desktop\\Projetos Renan\\AdminProj\\test\\obj\\",
+      "projectPath": "C:\\Users\\renan.leite\\Desktop\\Projetos Renan\\admin-proj\\test\\test.csproj",
+      "packagesPath": "C:\\Users\\renan.leite\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\renan.leite\\Desktop\\Projetos Renan\\admin-proj\\test\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Renan\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\renan.leite\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "http://desenvolvimento.pagdireto.com/NugetServer/nuget": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "C:\\Users\\Renan\\Desktop\\Projetos Renan\\AdminProj\\src\\AdminProj.csproj": {
-              "projectPath": "C:\\Users\\Renan\\Desktop\\Projetos Renan\\AdminProj\\src\\AdminProj.csproj"
+            "C:\\Users\\renan.leite\\Desktop\\Projetos Renan\\admin-proj\\src\\AdminProj.csproj": {
+              "projectPath": "C:\\Users\\renan.leite\\Desktop\\Projetos Renan\\admin-proj\\src\\AdminProj.csproj"
             }
           }
         }
@@ -13662,7 +13668,6 @@
             "version": "[15.6.0, )"
           },
           "Microsoft.NETCore.App": {
-            "suppressParent": "All",
             "target": "Package",
             "version": "[2.0.0, )",
             "autoReferenced": true

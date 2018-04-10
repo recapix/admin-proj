@@ -1,7 +1,6 @@
 {
   "name": "admin-proj",
-  "description": "\"# Admin Project\"",
-  "main": "",
+  "description": "Admin Project",
   "authors": [
     "Renan Marcel Paulino Leite <renannn@outlook.com>"
   ],
@@ -16,8 +15,8 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap": "boostrap#3.3.6",
-    "jquery": "2.2.4",
+    "bootstrap": "boostrap#3.3.7",
+    "jquery": "2.2.0",
     "jquery-validation": "^1.17.0",
     "jquery-validation-unobtrusive": "^3.2.9",
     "Waves": "waves#^0.7.6",
