@@ -1,0 +1,28 @@
+﻿<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
+<environment include="Development">
+  <!-- Bootstrap 3.3.6 -->
+  <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+  <!-- Waves Effect Css -->
+  <link href="~/lib/Waves/dist/waves.css" rel="stylesheet" />
+  <!-- Animation Css -->
+  <link href="~/lib/animate.css/animate.css" rel="stylesheet" />
+  <!-- Custom Css -->
+  <link href="~/css/style.css" rel="stylesheet">
+  <!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes -->
+  <link href="~/css/themes/all-themes.css" rel="stylesheet" />
+</environment>
+<environment exclude="Development">
+  <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
+        asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+        asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/node-waves/0.7.6/waves.min.css"
+        asp-fallback-href="~/lib/Waves/dist/waves.min.css"
+        asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
+        asp-fallback-href="~/lib/animate.css/animate.min.css"
+        asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
+  <link rel="stylesheet" href="~/css/style.min.css" asp-append-version="true" />
+  <link rel="stylesheet" href="~/css/themes/all-themes.min.css" asp-append-version="true" />
+</environment>
