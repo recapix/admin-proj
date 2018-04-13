@@ -16,11 +16,11 @@ dotnet restore
 
 dotnet test test/test.csproj -c Release -f netcoreapp2.0
 
-dotnet build .\src\AdminProj.csproj -c Release /p:DeployOnBuild=true  --framework netcoreapp2.0
-
 revision=${TRAVIS_JOB_ID:=1}  
 revision=$(printf "%04d" $revision) 
 
-dotnet pack ./src/AdminProj.csproj -c Release /p:DeployOnBuild=true -o ../artifacts --version-suffix=$revision
+dotnet build ./src/AdminProj.csproj -c Release --framework netcoreapp2.0
 
-  
+dotnet pack ./src/AdminProj.csproj -c Release -o ../artifacts --version-suffix=$revision
+
+
