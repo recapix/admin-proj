@@ -11,4 +11,16 @@ branches:
     - develop
 script:
   - ./build.sh
-
+before_deploy:
+   # Set up git user name and tag this commit
+  - git config --local user.name "Renan Marcel Paulino Leite"
+  - git config --local user.email "renan.leite@globo.com"
+  - git tag "$(date +'%Y%m%d%H%M%S')-$(git log --format=%h -1)"
+deploy:
+  provider: releases
+  api_key: 4321c3669a6821d78eb3758b831fe3f5acc8d1e4
+  file_glob: true
+  file: artifacts/**/*
+  skip_cleanup: true
+  on:
+    tags: true
