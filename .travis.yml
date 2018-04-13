@@ -17,10 +17,13 @@ before_deploy:
   - git config --local user.email "renan.leite@globo.com"
   - git tag "$(date +'%Y%m%d%H%M%S')-$(git log --format=%h -1)"
 deploy:
-  provider: releases
-  api_key: 4321c3669a6821d78eb3758b831fe3f5acc8d1e4
+  provider: GitHub
+  tag: v$(appveyor_build_version)
+  release: v$(appveyor_build_version)
+  auth_token:
+    secure: 4321c3669a6821d78eb3758b831fe3f5acc8d1e4
   file_glob: true
   file: artifacts/**/*
   skip_cleanup: true
   on:
-    tags: true
+    branch: master
