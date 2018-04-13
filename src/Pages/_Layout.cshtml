@@ -36,7 +36,14 @@
   </section>
 
   <section class="content">
+    
     <div class="container-fluid">
+      <div class="jumbotron">
+        <h1>@ViewData["Title"]</h1>
+        <p>@ViewData["Description"]</p>        
+        @RenderSection("jumbotron", required: false)        
+    </div>  
+
       @RenderBody()
     </div>
   </section>

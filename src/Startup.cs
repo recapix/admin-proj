@@ -39,6 +39,7 @@ namespace AdminProj
                     options.Conventions.AuthorizePage("/");
                     options.Conventions.AuthorizePage("/Index");
                     options.Conventions.AuthorizeFolder("/Account/Manage");
+                    options.Conventions.AuthorizeFolder("/Unidade");
                     options.Conventions.AuthorizePage("/Account/Logout");
                 });
 
