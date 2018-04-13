@@ -3,6 +3,9 @@
     <TargetFramework>netcoreapp2.0</TargetFramework>
     <UserSecretsId>aspnet-AdminProj-0F0C059A-6AEC-49F2-86DB-F4B90CD647D9</UserSecretsId>
   </PropertyGroup>
+  <PropertyGroup>
+    <IsPackable>true</IsPackable>
+  </PropertyGroup>
   <ItemGroup>
     <None Update="app.db" CopyToOutputDirectory="PreserveNewest" />
   </ItemGroup>
