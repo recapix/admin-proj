@@ -5,6 +5,7 @@
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <title>@ViewData["Title"] - AdminProj</title>
   @await Html.PartialAsync("Partials/_StylesPartial")
+  @RenderSection("Styles", required: false)
 </head>
 <body class="theme-teal">
   <!-- Page Loader -->
@@ -36,18 +37,17 @@
   </section>
 
   <section class="content">
-    
     <div class="container-fluid">
-      <div class="jumbotron">
-        <h1>@ViewData["Title"]</h1>
-        <p>@ViewData["Description"]</p>        
-        @RenderSection("jumbotron", required: false)        
-    </div>  
-
+      @if(!String.IsNullOrEmpty(ViewData["Title"].ToString())){
+        <div class="jumbotron">
+          <h3>@ViewData["Title"]</h3>
+          <p>@ViewData["Description"]</p>        
+          @RenderSection("jumbotron", required: false)        
+        </div>  
+      }
       @RenderBody()
     </div>
   </section>
-  
   @await Html.PartialAsync("Partials/_ScriptsPartial")
   @RenderSection("Scripts", required: false)
 </body>

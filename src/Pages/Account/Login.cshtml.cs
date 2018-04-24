@@ -35,14 +35,16 @@ namespace AdminProj.Pages.Account
         public class InputModel
         {
             [Required]
+            [Display(Name = "E-mail")]
             [EmailAddress]
             public string Email { get; set; }
 
             [Required]
+            [Display(Name = "Senha")]
             [DataType(DataType.Password)]
             public string Password { get; set; }
 
-            [Display(Name = "Remember me?")]
+            [Display(Name = "Manter conectado?")]
             public bool RememberMe { get; set; }
         }
 

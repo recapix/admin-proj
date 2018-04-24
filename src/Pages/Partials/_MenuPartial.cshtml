@@ -21,6 +21,38 @@
         <span>Contact</span>
       </a>
     </li>
+    <!-- Administrador -->
+    <li>
+      <a href="javascript:void(0);" class="menu-toggle">
+        <i class="material-icons">event</i>
+        <span>Administrador</span>
+      </a>
+      <ul class="ml-menu">
+        <li>
+          <a href="javascript:void(0);" class="menu-toggle">
+            <span>Usuarios</span>
+          </a>
+          <ul class="ml-menu">
+            <li>
+              <a asp-page="/Administrador/Usuarios/Cadastro">
+                <span>Cadastrar novo usuario</span>
+              </a>
+            </li>
+            <li>
+              <a asp-page="/Administrador/Usuarios/Consulta">
+                <span>Consulta de usuarios</span>
+              </a>
+            </li>            
+            <li>
+              <a asp-page="/Administrador/Usuarios/Relatorio">
+                <span>Relatorio de usuarios</span>
+              </a>
+            </li>
+          </ul>
+        </li>       
+      </ul>
+    </li>
+
     <!-- Unidades -->
     <li>
       <a href="javascript:void(0);" class="menu-toggle">

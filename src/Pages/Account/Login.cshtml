@@ -16,20 +16,20 @@
 <body class="login-page">
   <div class="login-box">
     <div class="logo">
-      <a href="javascript:void(0);">Admin<b>BSB</b></a>
-      <small>Admin BootStrap Based - Material Design</small>
+      <a href="javascript:void(0);">Admin<strong>BSB</strong></a>
+      <small>Sistema de integração medica</small>
     </div>
     <div class="card">
       <div class="body">
         <form id="sign_in" method="POST">
-          <div class="msg">Sign in to start your session</div>
+          <div class="msg">Entre com sua conta para iniciar sua sessão</div>
           <div class="input-group">
             <span class="input-group-addon">
               <i class="material-icons">person</i>
             </span>
             <div class="form-line">
               <label asp-for="Input.Email"></label>
-              <input asp-for="Input.Email" class="form-control" autofocus />
+              <input asp-for="Input.Email" class="form-control" autofocus/>
               <span asp-validation-for="Input.Email" class="text-danger"></span>
             </div>
           </div>

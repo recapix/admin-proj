@@ -1,5 +1,5 @@
 {
-  "directory": "wwwroot/lib/",
+  "directory": "wwwroot/plugins/",
   "timeout": 120000,
   "registry": {
     "search": [

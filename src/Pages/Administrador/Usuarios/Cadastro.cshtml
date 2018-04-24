@@ -1,0 +1,71 @@
+﻿@page
+@model Administrador.Usuarios.CadastroModel
+@{
+  ViewData["Title"] = "Cadastro";
+}
+
+<!-- Basic Validation -->
+<div class="row clearfix">
+  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <div class="card">
+      <div class="header">
+        <h2>BASIC VALIDATION</h2>
+      </div>
+      <div class="body">
+        <form id="form_validation" method="POST">
+          <div class="form-group form-float">
+            <div class="form-line">
+              <input type="text" class="form-control" name="name" />
+              <label class="form-label">Nome</label>
+            </div>
+          </div>
+          <div class="form-group form-float">
+            <div class="form-line">
+              <input type="text" class="form-control" name="surname" />
+              <label class="form-label">Sobrenome</label>
+            </div>
+          </div>
+          <div class="form-group form-float">
+            <div class="form-line">
+              <input type="email" class="form-control" name="email" />
+              <label class="form-label">Email</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="radio" name="gender" id="male" class="with-gap">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female" class="with-gap">
+            <label for="female" class="m-l-20">Female</label>
+          </div>
+          <div class="form-group form-float">
+            <div class="form-line">
+              <textarea name="description" cols="30" rows="5" class="form-control no-resize" required></textarea>
+              <label class="form-label">Description</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="checkbox" id="checkbox" name="checkbox">
+            <label for="checkbox">I have read and accept the terms</label>
+          </div>
+          <button class="btn btn-primary waves-effect" type="submit">SUBMIT</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+@section scripts {
+
+  <!-- Dropzone Plugin Js -->
+  <script src="~/lib/dropzone/dist/dropzone.js"></script>
+  <script src="~/lib/inputmask/dist/jquery.inputmask.bundle.js"></script>
+
+  <script src="~/js/pages/forms/advanced-form-elements.js"></script>
+}
+
+@section Styles {
+  <link href="~/lib/dropzone/dist/dropzone.css" rel="stylesheet" />
+}
