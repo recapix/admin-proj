@@ -3,7 +3,7 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 
-gulp.task('scss', ['scss-style', 'scss-themes']);
+gulp.task('scss', ['scss-style', 'scss-bootstrap-mvc','scss-themes']);
 
 
 gulp.task('scss-themes', [
@@ -32,6 +32,12 @@ gulp.task('scss-all-themes', function () {
     return gulp.src('./scss/themes/all-themes.scss')
         .pipe(sass.sync().on('error', sass.logError))
         .pipe(gulp.dest('./wwwroot/css/themes'));
+});
+
+gulp.task('scss-bootstrap-mvc', function () {
+    return gulp.src('./scss/bootstrap.mvc.scss')
+        .pipe(sass.sync().on('error', sass.logError))
+        .pipe(gulp.dest('./wwwroot/css'));
 });
 
 gulp.task('scss-theme-red', function () {

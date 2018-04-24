@@ -2,6 +2,23 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.0": {
+      "jQWidgets.AspNetCore.Mvc.Bootstrap.TagHelpers/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Mvc.Razor": "2.0.2",
+          "Microsoft.AspNetCore.Razor.Runtime": "2.0.1",
+          "Microsoft.AspNetCore.Routing.Abstractions": "2.0.1",
+          "Microsoft.Extensions.Caching.Memory": "2.0.0",
+          "Microsoft.Extensions.FileSystemGlobbing": "2.0.0",
+          "Microsoft.Extensions.Primitives": "2.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/jQWidgets.AspNetCore.Mvc.Bootstrap.TagHelpers.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/jQWidgets.AspNetCore.Mvc.Bootstrap.TagHelpers.dll": {}
+        }
+      },
       "Libuv/1.10.0": {
         "type": "package",
         "dependencies": {
@@ -5169,7 +5186,8 @@
         "framework": ".NETCoreApp,Version=v2.0",
         "dependencies": {
           "Microsoft.AspNetCore.All": "2.0.6",
-          "Microsoft.NETCore.App": "2.0.0"
+          "Microsoft.NETCore.App": "2.0.0",
+          "jQWidgets.AspNetCore.Mvc.Bootstrap.TagHelpers": "2.0.0"
         },
         "compile": {
           "bin/placeholder/AdminProj.dll": {}
@@ -5181,6 +5199,17 @@
     }
   },
   "libraries": {
+    "jQWidgets.AspNetCore.Mvc.Bootstrap.TagHelpers/2.0.0": {
+      "sha512": "E/aoAfimBKpZEQuqd3SPRHs30tE1vZk4VDddFt0tzO38LdXgCRS51k4pzj0Yu4Mn0qlif3yH0eRy6l2RGqb35A==",
+      "type": "package",
+      "path": "jqwidgets.aspnetcore.mvc.bootstrap.taghelpers/2.0.0",
+      "files": [
+        "jqwidgets.aspnetcore.mvc.bootstrap.taghelpers.2.0.0.nupkg.sha512",
+        "jqwidgets.aspnetcore.mvc.bootstrap.taghelpers.nuspec",
+        "lib/netstandard2.0/jQWidgets.AspNetCore.Mvc.Bootstrap.TagHelpers.dll",
+        "lib/netstandard2.0/jQWidgets.AspNetCore.Mvc.Bootstrap.TagHelpers.xml"
+      ]
+    },
     "Libuv/1.10.0": {
       "sha512": "GsCf4q+eyaI49rCPlgYxdxa1SQCysXFFdSJWdstrwxytg4+VPYLYrXD4AT2rjHVJ+UF7SSWX9CapWEYaU4ejVQ==",
       "type": "package",
@@ -13607,41 +13636,35 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\renan.leite\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
+    "C:\\Users\\Renan\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\renan.leite\\Desktop\\Projetos Renan\\admin-proj\\test\\test.csproj",
+      "projectUniqueName": "c:\\Users\\Renan\\Desktop\\Projetos Renan\\admin-proj\\test\\test.csproj",
       "projectName": "test",
-      "projectPath": "C:\\Users\\renan.leite\\Desktop\\Projetos Renan\\admin-proj\\test\\test.csproj",
-      "packagesPath": "C:\\Users\\renan.leite\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\renan.leite\\Desktop\\Projetos Renan\\admin-proj\\test\\obj\\",
+      "projectPath": "c:\\Users\\Renan\\Desktop\\Projetos Renan\\admin-proj\\test\\test.csproj",
+      "packagesPath": "C:\\Users\\Renan\\.nuget\\packages\\",
+      "outputPath": "c:\\Users\\Renan\\Desktop\\Projetos Renan\\admin-proj\\test\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\renan.leite\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
+        "C:\\Users\\Renan\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "http://desenvolvimento.pagdireto.com/NugetServer/nuget": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "C:\\Users\\renan.leite\\Desktop\\Projetos Renan\\admin-proj\\src\\AdminProj.csproj": {
-              "projectPath": "C:\\Users\\renan.leite\\Desktop\\Projetos Renan\\admin-proj\\src\\AdminProj.csproj"
+            "c:\\Users\\Renan\\Desktop\\Projetos Renan\\admin-proj\\src\\AdminProj.csproj": {
+              "projectPath": "c:\\Users\\Renan\\Desktop\\Projetos Renan\\admin-proj\\src\\AdminProj.csproj"
             }
           }
         }
@@ -13668,6 +13691,7 @@
             "version": "[15.6.0, )"
           },
           "Microsoft.NETCore.App": {
+            "suppressParent": "All",
             "target": "Package",
             "version": "[2.0.0, )",
             "autoReferenced": true
