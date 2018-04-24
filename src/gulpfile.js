@@ -2,17 +2,7 @@
 var gulp = require('gulp'),
   sass = require('gulp-sass'),
   sourcemaps = require('gulp-sourcemaps');
-
-gulp.task('copy-materialize', function () {
-  gulp.src(['wwwroot/lib/materialize/dist/css/materialize.css'])
-    .pipe(gulp.dest('wwwroot/css'));
-});
-
-gulp.task('copy-roboto-fonts', function () {
-  gulp.src(['wwwroot/lib/roboto-fontface/fonts/roboto/**/*.*'])
-    .pipe(gulp.dest('wwwroot/fonts/roboto'));
-});
-
+  
 gulp.task('scss', ['scss-style', 'scss-bootstrap-mvc', 'scss-themes']);
 
 gulp.task('scss-themes', [
